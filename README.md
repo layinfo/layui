@@ -1,6 +1,12 @@
 # layui
 layui前端 UI 框架扩展模块
 
+
+## layui 版本需求：v2.4.5+
+
+此项目为layui组件扩展 x 系列
+
+
 ## 目录结构
 
 初始的目录结构如下：
@@ -25,9 +31,29 @@ www  WEB部署目录（或者子目录）
 ~~~
 
 
-## layui 版本需求：v2.4.5+
+## 安装，调用方法
 
-此项目为layui组件扩展 x 系列
+下载 src 目录下的扩展文件放到 /static/libs/ 目录下
+~~~
+<script type="text/javascript">
+layui.config({
+	base: '/static/libs/'
+}).use(['xTable', 'xTree'], function(){
+	var $   = layui.$,
+  xTable = layui.xTable,
+  xTree  = layui.xTree;
+  
+  xTable.render({
+   elem: '#dataTable',
+   url: ''
+   ...
+  });
+ 
+</script>
+~~~
+
+
+## 扩展组件系列
 
 ### 一、table 数据表格 增强版 xTable
   * 顶部工具栏自动生成搜索
