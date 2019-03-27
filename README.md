@@ -14,7 +14,7 @@ www  WEB部署目录（或者子目录）
 ├─public                WEB目录（对外访问目录）
 │  ├─index.php  
 │  ├─static             静态资源目录
-│  │  ├─layui           layui UI 框架目录
+│  │  ├─layui           layui UI 框架目录 v2.4.5+
 │  │  ├─css             全局CSS文件目录
 │  │  ├─images          全局图片文件目录
 │  │  ├─libs            扩展js类库
@@ -22,5 +22,19 @@ www  WEB部署目录（或者子目录）
 │  │  │  ├─xTree.js     扩展版tree
 │  │  │  ...
 │  └─.htaccess          用于apache的重写
+~~~
 
 
+## layui 版本需求：v2.4.5+
+
+此项目为layui组件扩展 x 系列
+
+### 一、table 数据表格 增强版 xTable
+  * 顶部工具栏自动生成搜索
+  * 顶部工具栏自动生成按钮
+  
+### 二、tree 树形菜单 扩展版 xTree
+  * 支持普通tree菜单
+  * 显示单选框、多选框
+  * 支持每个节点点击回调事件
+  * 支持修改显示图标
